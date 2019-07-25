@@ -1,1 +1,1 @@
-web: gunicorn mosalam.wsgi
+web: gunicorn src.mosalam.wsgi
