@@ -1,7 +1,7 @@
 # mosalam.me - Personal website   
 [![Build Status](https://travis-ci.org/m7salam/mosalam.svg?branch=master)](https://travis-ci.org/m7salam/mosalam)
 
-* [MoSalam](http://mosalam.me) - is my own personal website I have built for learning purposes also to become the go to website to learn more about me and my experience.
+* [MoSalam](http://mosalam.me) - is my own personal website I have built for learning purposes, also to become the go to website to learn more about me and my experience.
 
 
 ## Getting Started
