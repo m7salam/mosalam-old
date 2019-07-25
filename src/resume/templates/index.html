@@ -1,0 +1,491 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
+
+
+
+
+            <!-- Home Subpage -->
+            <section class="pt-page" data-id="about-me">
+              <div class="section-inner start-page-full-width">
+                <div class="start-page-full-width">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="inner-content">
+                          <div class="fill-block"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                      <div class="inner-content">
+                        <div class="hp-text-block">
+                          <!-- Text rotation / Subtitle -->
+                          <div class="owl-carousel text-rotation">                                    
+                            <div class="item">
+                            {% for title in job_title %}
+                              <div class="sp-subtitle">{{title.job_title}}</div>
+                            </div>
+                            {% endfor %}
+
+                            {% comment %} <div class="item">
+                            <div class="sp-subtitle">Frontend/Backend developer</div>
+                            </div> 
+                             </div> {% endcomment %}
+                            
+                          <!-- /Text rotation / Subtitle -->
+                          {% for bio in bio %}
+                              
+                          <h2 class="hp-main-title">{{bio.name}}</h2>
+                          {% autoescape off %}
+                          <p>{{bio.bio_body}}</p>
+                          {% endautoescape %}
+                          {% endfor %}
+
+                          <div class="hp-buttons">
+                            <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-inner custom-page-content">
+                <div class="page-content">
+                  <!-- Services Block Title -->    
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-inner">
+                        <div class="block-title">
+                            <h3>What I Do</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Services Block Title -->  
+
+                  <!-- Services Block -->  
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                        {% for service in service %}
+                        
+                        
+                          <!-- Service Item 1 -->
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              {% autoescape off %}
+                              {{service.icon}}
+                              {% endautoescape %}
+                            </div>
+                            <div class="ci-text">
+                              <h4>{{service.title}}</h4>
+                              <p>{{service.description}}</p>
+                            </div>
+                          </div>
+                          <!-- /Service Item 1 -->
+
+                        
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                          <!-- Service Item 3 -->
+                            {% if  forloop.counter3 %}
+                              <div class="info-block-w-icon">
+                                <div class="ci-icon">
+                                  {% autoescape off %}
+                                  {{service.icon}}
+                                  {% endautoescape %}
+                                </div>
+                                <div class="ci-text">
+                                  <h4>{{service.title}}</h4>
+                                  <p>{{service.description}}</p>
+                                </div>
+                              </div>
+                            {% endif %}
+                          <!-- Service Item 3 -->
+
+                         {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Services Block -->
+                  <!-- Testimonials Block -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-inner ts-25 bs-50">
+                        <!-- Testimonials Block Title -->
+                        <div class="block-title">
+                            <h3>Testimonials<span></span></h3>
+                        </div>
+                        <!-- /Testimonials Block Title -->
+
+                        <!-- Testimonials Carousel Block -->
+                        <div class="testimonials owl-carousel">
+                        {% for item in testimonial %}
+                          <!-- Testimonial 1 -->
+                          <div class="testimonial-item">
+                              
+                              
+                            <!-- Testimonial Content -->
+                            <div class="testimonial-content">
+                              <div class="testimonial-text">
+                                <p>{{item.body}}</p>
+                              </div>
+                            </div>            
+                            <!-- /Testimonial Content -->
+
+                            <!-- Testimonial Author -->
+                            <div class="testimonial-credits">
+                              <!-- Picture -->
+                              <div class="testimonial-picture">
+                                <img src="{{item.picture.url}}" alt="Gary Johnson"/>
+                              </div>              
+                              <!-- /Picture -->
+                              <!-- Testimonial author information -->
+                              <div class="testimonial-author-info">
+                                <p class="testimonial-author">{{item.person}}</p>
+                                <p class="testimonial-firm">{{item.company}}</p>
+                              </div>
+                            </div>
+                            <!-- /Testimonial author information -->  
+
+                          </div>
+                          <!-- End of Testimonial 1 -->
+                          {% endfor %}
+                        </div>
+                        <!-- /Testimonials Carousel Block -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Testimonials Block -->
+
+                  <!-- Clients Block -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-inner">
+                        <!-- Clients Block Title -->
+                        <div class="block-title">
+                          <h3>Clients<span></span></h3>
+                        </div>
+                        <!-- /Clients Block Title -->
+
+                        <!-- Clients Carousel Block -->
+                        <div class="clients owl-carousel">
+                        {% for item in client %}
+                        {% autoescape off %}
+                          <div class="client-block">
+                            <a href="{{item.link}}" target="_blank" title="Logo">
+                              <img src="{{item.logo.url}}" alt="Logo">
+                            </a>{% endautoescape %}
+                          </div>
+                          {% endfor %}
+
+                        </div>
+                        <!-- /Clients Carousel Block -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Clients Block -->
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page" data-id="resume">
+              <div class="section-inner custom-page-content">
+                <div class="section-title-block second-style">
+                  <h2 class="section-title">Resume</h2>
+                  <h5 class="section-description">10+ Years of Experience</h5>
+                </div>
+
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-8">
+                      <div class="col-inner bs-30">
+                        <div class="block-title">
+                            <h3>Education</h3>
+                        </div>
+                        {% for i in education %}
+                        
+                        
+                        <div class="timeline timeline-second-style bs-30 clearfix">
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">{{i.year}}</h5>
+                              <span class="item-company">{{i.university}}</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">{{i.subject}}</h4>
+                              <p>{{i.overview}}</p>
+                            </div>
+                          </div>
+                         {% endfor %}
+
+                          </div>
+                        </div>
+
+                        <div class="block-title">
+                            <h3>Experience<span></span></h3>
+                        </div>
+
+
+                        <div class="timeline timeline-second-style clearfix">
+                        {% for e in experience %}
+                        
+                        
+                          <div class="timeline-item clearfix">
+                            <div class="left-part">
+                              <h5 class="item-period">{{e.period}}</h5>
+                              <span class="item-company">{{e.company}}</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                              <h4 class="item-title">{{e.job}}</h4>
+                              <p>{{e.overview}}</p>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="col-inner">
+
+                        <div class="block-title">
+                          <h3>Coding Skills<span></span></h3>
+                        </div>
+
+                        <div class="skills-info skills-second-style">
+                          <!-- Skill 1 -->
+                          {% for s in coding_skill %}
+                          
+                          
+                          <div class="clearfix">
+                            <h4>{{s.skill}}</h4>
+                            <div class="skill-value">{{s.level}}</div>
+                          </div>
+                          <div class="skill-container">
+                              {% autoescape off %}
+                            <div class="{{s.style_class}}"></div>
+                              {% endautoescape %}
+                          </div>
+                          <!-- /Skill 1 -->
+                          {% endfor %}
+                        </div>
+
+                        <div class="block-title ts-10">
+                          <h3>Technologies<span></span></h3>
+                        </div>
+
+
+                        <div class="skills-info skills-second-style">
+                        {% for i in technology %}
+                          <!-- Skill 5 -->
+                          <div class="clearfix">
+                            <h4>{{i.technology}}</h4>
+                            <div class="skill-value">{{i.level}}</div>
+                          </div>
+                          <div class="skill-container">
+                          {% autoescape off %}
+                            <div class="{{i.style_class}}"></div>
+                          {% endautoescape %}
+                          </div>
+                          <!-- /Skill 5 -->
+                          {% endfor %}
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-inner ts-30">
+                        <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Resume Subpage -->
+
+
+{% comment %} 
+            <!-- Blog Subpage -->
+            <section class="pt-page" data-id="blog">
+              <div class="section-inner custom-page-content">
+                <div class="section-title-block second-style">
+                  <h2 class="section-title">Blog</h2>
+                  <h5 class="section-description">My Diary</h5>
+                </div>
+
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="blog-masonry two-columns clearfix">
+                        
+                        <!-- Blog Post 1 -->
+                        <div class="item post-1">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in UI">UI</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="{% static 'images/blog/blog_post_6.jpg' %}" class="size-blog-masonry-image-two-c' %}" alt="Best Practices for Animated Progress Indicators" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Apr 2018</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Best Practices for Animated Progress Indicators</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 1 -->
+
+                        <!-- Blog Post 2 -->
+                        <div class="item post-2">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="{% static 'images/blog/blog_post_5.jpg' %}" class="size-blog-masonry-image-two-c ' %}" alt="Designing the Perfect Feature Comparison Table" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Apr 2018</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Designing the Perfect Feature Comparison Table</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 2 -->
+
+                        <!-- Blog Post 3 -->
+                        <div class="item post-3">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="{% static 'images/blog/blog_post_4.jpg' %}" class="size-blog-masonry-image-two-c' %}" alt="An Overview of E-Commerce Platforms" title=""/>
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Apr 2018</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">An Overview of E-Commerce Platforms</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 3 -->
+
+                        <!-- Blog Post 4 -->
+                        <div class="item post-4">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">Design</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="{% static 'images/blog/blog_post_3.jpg' %}" class="size-blog-masonry-image-two-c' %}" alt="Why I Switched to Sketch For UI Design" title="" />
+                                <div class="mask"></div>
+                                </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Apr 2018</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Why I Switched to Sketch For UI Design</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 4 -->
+                        
+                        <!-- Blog Post 5 -->
+                        <div class="item post-5">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in UI">UI</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="{% static 'images/blog/blog_post_2.jpg' %}" class="size-blog-masonry-image-two-c' %}" alt="Creative and Innovative Navigation Designs" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                                <div class="post-date">06 Apr 2018</div>
+                                <a href="blog-post-1.html">
+                                  <h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 5 -->
+                        
+                        <!-- Blog Post 6 -->
+                        <div class="item post-6">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">Design</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="{% static 'images/blog/blog_post_1.jpg' %}" class="size-blog-masonry-image-two-c' %}" alt="6 Easy Steps to Better Icon Design" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Apr 2018</div>
+                              <a href="blog-post-1.html"><h4 class="blog-item-title">6 Easy Steps to Better Icon Design</h4></a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 6 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /Blog Subpage --> {% endcomment %}
+
+
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+{% endblock content %}
