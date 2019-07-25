@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mosalam.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
