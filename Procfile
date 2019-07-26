@@ -1,1 +1,1 @@
-web: gunicorn mosalam.wsgi
+web: cd src && gunicorn mosalam.wsgi
