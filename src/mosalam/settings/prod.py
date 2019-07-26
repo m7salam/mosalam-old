@@ -1,12 +1,12 @@
-from mosalam.settings.base import *
+from .base import *
 
 
 DEBUG = False
 ALLOWED_HOSTS = ['mosalam.herokuapp.com',]
 
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = 'mosalam.wsgi'
 
 try:
-    from mosalam.settings.local import *
+    from .local import *
 except:
     pass
