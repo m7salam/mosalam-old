@@ -1,6 +1,4 @@
 import os
-import dj_database_url
-import django_heroku
 import dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -8,7 +6,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 
 #dotenv file
 dotenv_file = os.path.dirname(os.path.join(BASE_DIR, ".env"))
-print (dotenv_file)
 if os.path.isfile(dotenv_file):
     dotenv.load_dotenv(dotenv_file)
 
@@ -44,7 +41,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -141,7 +138,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #
 # # Activate Django-Heroku.

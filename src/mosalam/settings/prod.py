@@ -1,8 +1,8 @@
 from .base import *
 
 import os
-import dj_database_url
-import django_heroku
+# import dj_database_url
+# import django_heroku
 import dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -23,7 +23,7 @@ SECRET_KEY = '8ym#0sin@#lg%0d#kgt8nm@42g_muc+@$ls*gvcl$1$ex_%2t3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mosalam.herokuapp.com']
+ALLOWED_HOSTS = ['mosalam.herokuapp.com','*mosalam.me','ec2-3-0-100-167.ap-southeast-1.compute.amazonaws.com']
 
 LOGGING = {
     'version': 1,
