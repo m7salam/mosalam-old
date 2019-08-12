@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+{% load static%}
+{% block content %}
+
 <div id="ajax-page" class="ajax-page-content">
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
@@ -11,25 +15,29 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Portfolio Project 1</h1>
+        {% for item in project %}
+        
+        
+            <h1>{{item.title}}</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-7 col-md-7 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
-                    <div class="item">
-                        <img src="images/portfolio/full/1.jpg" alt="" />
+                    <div class="item">{% autoescape off %}
+                        <img src="{% static 'images/portfolio/full/1.jpg' %}" alt="" />
                     </div>
                     <div class="item">
-                        <img src="images/portfolio/full/2.jpg" alt="" />
+                        <img src="{{ item.image.url }}" alt="" />
                     </div>
                     <div class="item">
-                        <img src="images/portfolio/full/3.jpg" alt="" />
-                    </div>
+                        <img src="{{ item.image.url }}" alt="" />
+                    </div>{% endautoescape %}
                 </div>
 
                 <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
+                {% autoescape off %}
+                  <iframe class="embed-responsive-item" src="{{ item.video }}"></iframe>{% endautoescape %}
                 </div>
 
                 <!--
@@ -62,12 +70,12 @@
                         <h3>Description</h3>
                     </div>
                     <ul class="project-general-info">
-                        <li><p><i class="fa fa-user"></i> Alex Smith</p></li>
-                        <li><p><i class="fa fa-globe"></i> <a href="#" target="_blank">www.project-site.com</a></p></li>
-                        <li><p><i class="fa fa-calendar"></i> 25 december, 2016</p></li>
+                        {% autoescape off %}
+                        <li><p><i class="fa fa-globe"></i> <a href="{{item.website}}" target="_blank">{{item.website}}</a></p></li>
+                        {% endautoescape %}
                     </ul>
 
-                    <p class="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="text-justify">{{item.description}}</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -76,15 +84,15 @@
                             <h3>Technology</h3>
                         </div>
                         <ul class="tags">
-                            <li><a>HTML5</a></li>
-                            <li><a>CSS3</a></li>
-                            <li><a>jQuery</a></li>
-                            <li><a>Ajax</a></li>
-                            <li><a>PHP5</a></li>
+                        {% for tech in item.category.all %}
+                        
+                        
+                            <li><a>{{tech.title}}</a></li>
+                           {% endfor %}
                         </ul>
                     </div>
                     <!-- /Technology -->
-
+                    {% endfor %}
                     <!-- Share Buttons -->
                     <div class="btn-group share-buttons">
                         <div class="block-title">
@@ -101,3 +109,6 @@
         </div>
     </div>
 </div>
+
+
+{% endblock content %}
