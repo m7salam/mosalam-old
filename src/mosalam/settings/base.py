@@ -87,11 +87,11 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ddgnprulnp2cnd',
-            'USER': 'tkdwwrysnxywkq',
-            'PASSWORD': 'a3bc6249b0b21b790cebbc013ad937ec882a90500ca336094859e420cfab433c',
-            'HOST': 'ec2-23-21-109-177.compute-1.amazonaws.com',
-            'PORT': '5432',
+            'NAME': 'mosalamdb',
+            'USER': 'admin',
+            'PASSWORD': 'MoSalamDB@2019',
+            'HOST': 'localhost',
+            'PORT': '',
         }
     }
 # DATABASES['default'] = dj_database_url.config(conn_max_age=600)
