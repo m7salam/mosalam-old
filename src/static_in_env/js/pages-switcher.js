@@ -96,7 +96,7 @@ var PageTransitions = (function($, options) {
     }
 
     function getActiveSection() {
-        if(location.hash == = "") {
+        if(location.hash === "") {
             return location.hash= $('section.pt-page').first().attr('data-id')
         }
         else {
