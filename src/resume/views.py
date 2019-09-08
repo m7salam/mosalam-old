@@ -1,7 +1,7 @@
 
 from django.shortcuts import render
 from projects.models import *
-
+from blog.models import *
 from .models import (
     Bio, 
     Job_Title, 
@@ -28,6 +28,7 @@ def index(request):
     technology = Technology.objects.all()
     project_featured = Project.objects.filter(featured=True)
     project = Project.objects.all()
+    featured_blog = Post.objects.filter(featured=True)
 
     context = {
         "bio": bio,
@@ -41,6 +42,7 @@ def index(request):
         "technology" : technology,
         "project_featured" : project_featured,
         "project": project,
+        "featured_blog":featured_blog,
 
 
 

@@ -26,7 +26,7 @@ class Project(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True)
     description = models.TextField()
-    image = models.ManyToManyField('Images', blank=True, null=True, related_name='projects')
+    image = models.ManyToManyField('Images', related_name='projects')
     video = models.TextField(blank=True, null=True)
     technology = models.ManyToManyField('Technology', related_name='projects')
     category = models.ManyToManyField('Category', related_name='projects')

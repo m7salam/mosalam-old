@@ -19,12 +19,14 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', include("resume.urls", namespace="index")),
     path("blog/", include("blog.urls", namespace="blog")),
     path("projects/", include("projects.urls", namespace="projects")),
     path("contact/", include("contact.urls", namespace="contact")),
+
     
 
 ]

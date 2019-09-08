@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth import get_user_model
-
 User = get_user_model()
 
 # Create your models here.
@@ -27,9 +26,14 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
     categories = models.ManyToManyField('Category', related_name='posts')
+    featured = models.BooleanField(null=True, blank=True, default=False)
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        from django.urls import reverse
+        return reverse('blog:blog_detail', args=[str(self.id)])
 
 
 class Comment(models.Model):
