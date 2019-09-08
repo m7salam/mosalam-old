@@ -129,12 +129,15 @@
                         <div class="section-title col-sm-12">
                             <h3>Featured Projects</h3>
                         </div>
+
                         <div class="col-sm-12">
+
                             <div class="mh-single-project-slide-by-side row">
+                            {% for project in project_featured %}
                                 <!-- Project Items -->
                                 <div class="col-sm-12 mh-featured-item">
                                     <div class="row">
-                                        {% for project in project %}
+
                                         <div class="col-sm-7">
                                             <div class="mh-featured-project-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                                                 <img src="{{project.image.url}}" alt="" class="img-fluid">
@@ -146,31 +149,34 @@
                                                 <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">{{project.title}}</h2>
                                                 <span class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">{% for category in project.category.all %} {{category.title}} {% endfor %}</span>
                                                 <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">{{project.description}}</p>
-                                                <a href="" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">View Details</a>
+                                                <a data-fancybox data-src="#{{project.ajax_id}}" href="" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">View Details</a>
                                                 <div class="mh-testimonial mh-project-testimonial wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
-                                                    <blockquote>
-                                    					<q>Excellent Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
-                                    					<cite>- Shane Kavanagh</cite>
-                                    				</blockquote>
-                                    				<blockquote>
-                                    					<q>Creative Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
-                                    					<cite>- Shane Kavanagh</cite>
-                                    				</blockquote>
-                                    				<blockquote>
-                                    					<q>Organize Code - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>
-                                    					<cite>- Shane Kavanagh</cite>
-                                    				</blockquote>
+{#                                                    <blockquote>#}
+{#                                    					<q>Excellent Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>#}
+{#                                    					<cite>- Shane Kavanagh</cite>#}
+{#                                    				</blockquote>#}
+{#                                    				<blockquote>#}
+{#                                    					<q>Creative Template - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>#}
+{#                                    					<cite>- Shane Kavanagh</cite>#}
+{#                                    				</blockquote>#}
+{#                                    				<blockquote>#}
+{#                                    					<q>Organize Code - suits my needs perfectly whilst allowing me to learn some new technology first hand.</q>#}
+{#                                    					<cite>- Shane Kavanagh</cite>#}
+{#                                    				</blockquote>#}
                                                 </div>
                                             </div>
                                         </div>
-                                        {% endfor %}
+
                                     </div>
                                 </div>
+                            {% endfor %}
 
 
                             </div>
                         </div>
+
                     </div> <!-- End: .row -->
+
                 </div>
             </div>
         </section>
@@ -499,36 +505,25 @@
                     </div> <!-- End: .part -->
                 </div> <!-- End: .row -->
             </div>
-            <div class="mh-portfolio-modal" id="mh">
+            {% for project in project %}
+            <div class="mh-portfolio-modal" id="{{project.ajax_id}}">
                 <div class="container">
                     <div class="row mh-portfolio-modal-inner">
                         <div class="col-sm-5">
-                            <h2>Wrap - A campanion plugin</h2>
-                            <p>Wrap is a clean and elegant Multipurpose Landing Page Template.
-                            It will fit perfectly for Startup, Web App or any type of Web Services.
-                            It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme.
-                            All variations are organized separately so you can use / customize the template very easily.</p>
-
-                            <p>It is a clean and elegant Multipurpose Landing Page Template.
-                            It will fit perfectly for Startup, Web App or any type of Web Services.
-                            It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme.
-                            All variations are organized separately so you can use / customize the template very easily.</p>
+                            <h2>{{project.title}}</h2>
+                            <p>{{project.description}}</p>
                             <div class="mh-about-tag">
                                 <ul>
-                                    <li><span>php</span></li>
-                                    <li><span>html</span></li>
-                                    <li><span>css</span></li>
-                                    <li><span>php</span></li>
-                                    <li><span>wordpress</span></li>
-                                    <li><span>React</span></li>
-                                    <li><span>Javascript</span></li>
+                                    {% for category in project.category.all %}
+                                    <li><span>{{category.title}}</span></li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                             <a href="" class="btn btn-fill">Live Demo</a>
                         </div>
                         <div class="col-sm-7">
                             <div class="mh-portfolio-modal-img">
-                                <img src="{% static 'assets/images/pr-0.jif' %}" alt="" class="img-fluid">
+                                <img src="{{project.image.url}}" alt="" class="img-fluid">
                                 <p>All variations are organized separately so you can use / customize the template very easily.</p>
                                 <img src="{% static 'assets/images/pr-1.jif' %}" alt="" class="img-fluid">
                                 <p>All variations are organized separately so you can use / customize the template very easily.</p>
@@ -537,6 +532,7 @@
                     </div>
                 </div>
             </div>
+        {% endfor %}
         </section>
 
         <!--

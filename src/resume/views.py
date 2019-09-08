@@ -26,7 +26,8 @@ def index(request):
     experience = Experience.objects.all()
     coding_skill = Coding_Skill.objects.all()
     technology = Technology.objects.all()
-    project = Project.objects.filter(featured=True)
+    project_featured = Project.objects.filter(featured=True)
+    project = Project.objects.all()
 
     context = {
         "bio": bio,
@@ -38,7 +39,8 @@ def index(request):
         "experience" : experience,
         "coding_skill": coding_skill,
         "technology" : technology,
-        "project" : project
+        "project_featured" : project_featured,
+        "project": project,
 
 
 

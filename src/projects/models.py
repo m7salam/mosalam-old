@@ -24,7 +24,7 @@ class Project(models.Model):
     technology = models.ManyToManyField('Technology', related_name='projects')
     category = models.ManyToManyField('Category', related_name='projects')
     website = models.CharField(max_length = 255, blank=True, null=True)
-    ajax_id = models.CharField(max_length=255, default="#projects")
+    ajax_id = models.CharField(max_length=255, default="general")
     featured = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):
