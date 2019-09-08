@@ -20,19 +20,18 @@
                                 </div>
 
                                 <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Mo Salam</h2>
-                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Software Engineer</h4>
+                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Software Engineer, Growth Hacker, Entrepreneur </h4>
 
                                 <ul>
                                     <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:">mo@mosalam.me</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">+12 986 987 7867</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><address>37, Pollsatnd, New York, United State</address></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">+60 17 345 8113</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><address>Kuala Lumpur, Malaysia</address></li>
                                 </ul>
 
                                 <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-github"></i></a></li>
-                                    <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/m7salam/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/m7salam"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/m7salam"><i class="fa fa-github"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -105,11 +104,11 @@
                         <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                             {% autoescape off %}
                             {{ item.icon }}
-                            {% endautoescape %}
+
                             <h3>{{item.title}}</h3>
                             <p>
                                 {{item.description}}
-                            </p>
+                            </p>{% endautoescape %}
                         </div>
                     </div>
                     {% endfor %}
@@ -140,14 +139,14 @@
 
                                         <div class="col-sm-7">
                                             <div class="mh-featured-project-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                                <img src="{{project.image.url}}" alt="" class="img-fluid">
+                                                <img src="{{project.thumbnail.url}}" alt="" class="img-fluid">
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
                                             <div class="mh-featured-project-content">
-                                                <h4 class="project-category wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">{% for tech in project.technology.all %} {{tech.name}} {% endfor%}</h4>
+                                                <h4 class="project-category wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">{% for tech in project.technology.all %} {{tech.name }}{% endfor%}</h4>
                                                 <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">{{project.title}}</h2>
-                                                <span class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">{% for category in project.category.all %} {{category.title}} {% endfor %}</span>
+                                                <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">{{project.website}}</p>
                                                 <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">{{project.description}}</p>
                                                 <a data-fancybox data-src="#{{project.ajax_id}}" href="" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">View Details</a>
                                                 <div class="mh-testimonial mh-project-testimonial wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
@@ -198,97 +197,33 @@
                                 <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                     <h3>Technical Skills</h3>
                                     <div class="each-skills">
+                                        {% for skill in coding_skill %}
                                         <div class="candidatos">
                                             <div class="parcial">
                                                 <div class="info">
-                                                    <div class="nome">Javascript</div>
-                                                    <div class="percentagem-num">86%</div>
+                                                    <div class="nome">{{skill.skill}}</div>
+                                                    <div class="percentagem-num">{{skill.level}}%</div>
                                                 </div>
                                                 <div class="progressBar">
-                                                    <div class="percentagem" style="width: 86%;"></div>
+                                                    <div class="percentagem" style="width: {{skill.level}};"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="candidatos">
-                                            <div class="parcial">
-                                                <div class="info">
-                                                    <div class="nome">Java</div>
-                                                    <div class="percentagem-num">46%</div>
-                                                </div>
-                                                <div class="progressBar">
-                                                    <div class="percentagem" style="width: 46%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="candidatos">
-                                            <div class="parcial">
-                                                <div class="info">
-                                                    <div class="nome">Python</div>
-                                                    <div class="percentagem-num">38%</div>
-                                                </div>
-                                                <div class="progressBar">
-                                                    <div class="percentagem" style="width: 38%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="candidatos">
-                                            <div class="parcial">
-                                                <div class="info">
-                                                    <div class="nome">PHP</div>
-                                                    <div class="percentagem-num">17%</div>
-                                                </div>
-                                                <div class="progressBar">
-                                                    <div class="percentagem" style="width: 17%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="candidatos">
-                                            <div class="parcial">
-                                                <div class="info">
-                                                    <div class="nome">Python</div>
-                                                    <div class="percentagem-num">38%</div>
-                                                </div>
-                                                <div class="progressBar">
-                                                    <div class="percentagem" style="width: 38%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="candidatos">
-                                            <div class="parcial">
-                                                <div class="info">
-                                                    <div class="nome">PHP</div>
-                                                    <div class="percentagem-num">17%</div>
-                                                </div>
-                                                <div class="progressBar">
-                                                    <div class="percentagem" style="width: 17%;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
-                                <h3>Professional Skills</h3>
+                                <h3>Technologies</h3>
                                 <ul class="mh-professional-progress">
+                                    {% for item in technology %}
                                     <li>
-                                        <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                                        <div class="pr-skill-name">Communication</div>
+                                        <div class="mh-progress mh-progress-circle" data-progress="{{item.level}}"></div>
+                                        <div class="pr-skill-name">{{item.technology}}</div>
                                     </li>
-                                    <li>
-                                        <div class="mh-progress mh-progress-circle" data-progress="55"></div>
-                                        <div class="pr-skill-name">Team Work</div>
-                                    </li>
-                                    <li>
-                                        <div class="mh-progress mh-progress-circle" data-progress="86"></div>
-                                        <div class="pr-skill-name">Project Management</div>
-                                    </li>
-                                    <li>
-                                        <div class="mh-progress mh-progress-circle" data-progress="60"></div>
-                                        <div class="pr-skill-name">Creativity</div>
-                                    </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
@@ -393,113 +328,27 @@
                         <div class="portfolio-nav col-sm-12" id="filter-button">
                             <ul>
                                 <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
-                                <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Design</span></li>
-                                <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Branding</span></li>
-                                <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>
-                                <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li>
+                                <li data-filter=".Java" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Java</span></li>
+                                <li data-filter=".Python" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Python</span></li>
+                                <li data-filter=".Django" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Django</span></li>
+                                <li data-filter=".Wordpress" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Wordpress</span></li>
                             </ul>
                         </div>
                         <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
                             <div class="portfolioContainer row">
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                {% for project in project %}
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 {% for tech in project.technology.all %}{{tech.name}} {% endfor %} mockup">
                                     <figure>
-                                        <img src="{% static 'assets/images/portfolio/g1.jpg' %}" alt="img04">
+                                        <img src="{{project.thumbnail.url}}" alt="img04">
                                         <figcaption class="fig-caption">
                                             <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a data-fancybox data-src="#mh"></a>
+                                            <h5 class="title">{{project.title}}</h5>
+                                            <span class="sub-title">{% for tech in project.technology.all %}{{tech.name}} {% endfor %}</span>
+                                            <a href="{{project.thumbnail.url}}" data-fancybox data-src="#{{project.ajax_id}}"></a>
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g2.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g2.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g3.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g3.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g5.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g5.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g4.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g4.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g6.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g6.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g8.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g8.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g9.png' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g9.png' %}" data-fancybox data-src="#mh"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                    <figure>
-                                        <img src="{% static 'assets/images/portfolio/g7.jpg' %}" alt="img04">
-                                        <figcaption class="fig-caption">
-                                            <i class="fa fa-search"></i>
-                                            <h5 class="title">Creative Design</h5>
-                                            <span class="sub-title">Photograpy</span>
-                                            <a href="{% static 'assets/images/portfolio/g7.jpg' %}" data-fancybox="gallery"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+                                {% endfor %}
                             </div> <!-- End: .grid .project-gallery -->
                         </div> <!-- End: .grid .project-gallery -->
                     </div> <!-- End: .part -->
@@ -523,10 +372,12 @@
                         </div>
                         <div class="col-sm-7">
                             <div class="mh-portfolio-modal-img">
-                                <img src="{{project.image.url}}" alt="" class="img-fluid">
-                                <p>All variations are organized separately so you can use / customize the template very easily.</p>
-                                <img src="{% static 'assets/images/pr-1.jif' %}" alt="" class="img-fluid">
-                                <p>All variations are organized separately so you can use / customize the template very easily.</p>
+                                {% for image in project.image.all %}
+                                <img src="{{image.image.url}}" alt="" class="img-fluid">
+                                {% endfor %}
+
+
+
                             </div>
                         </div>
                     </div>
