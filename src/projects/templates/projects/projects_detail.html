@@ -1,24 +1,53 @@
+{#{% extends "base.html" %}#}
+{#{% load static%}#}
+{#{% block content %}#}
+{##}
+{#<div id="ajax-page" class="ajax-page-content ajax-page-visible">#}
+{#    <div class="ajax-page-wrapper">#}
+{#        <div class="ajax-page-nav">#}
+{#            <div class="nav-item ajax-page-prev-next">#}
+{#                <a class="ajax-page-load" href="portfolio-5.html"><i class="lnr lnr-chevron-left"></i></a>#}
+{#                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>#}
+{#            </div>#}
+{#            <div class="nav-item ajax-page-close-button">#}
+{#                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{##}
+{#                <!-- Project Description -->#}
+{#                 </div>#}
+{#            </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{##}
+{##}
+{#{% endblock content %}#}
+
+
 {% extends "base.html" %}
 {% load static%}
 {% block content %}
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
 
-<div id="ajax-page" class="ajax-page-content">
-    <div class="ajax-page-wrapper">
-        <div class="ajax-page-nav">
-            <div class="nav-item ajax-page-prev-next">
-                <a class="ajax-page-load" href="portfolio-5.html"><i class="lnr lnr-chevron-left"></i></a>
-                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
-            </div>
-            <div class="nav-item ajax-page-close-button">
-                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
-            </div>
-        </div>
-
-        <div class="ajax-page-title">
+            <!-- Portfolio Subpage -->
+            <section class="pt-page" data-id="projects">
+                <div class="section-content">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <!-- Portfolio Content -->
+    <div class="section-title-block second-style">
         {% for item in project %}
-        
-        
-            <h1>{{item.title}}</h1>
+
+
+            <h1 class="section-title">{{item.title}}</h1>
         </div>
 
         <div class="row">
@@ -85,8 +114,8 @@
                         </div>
                         <ul class="tags">
                         {% for tech in item.category.all %}
-                        
-                        
+
+
                             <li><a>{{tech.title}}</a></li>
                            {% endfor %}
                         </ul>
@@ -104,11 +133,11 @@
                     </div>
                     <!-- /Share Buttons -->
                 </div>
-                <!-- Project Description -->
-            </div>
-        </div>
-    </div>
-</div>
-
-
+                      <!-- /Portfolio Content -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /Portfolio Subpage -->
 {% endblock content %}

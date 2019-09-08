@@ -1,5 +1,7 @@
 
 from django.shortcuts import render
+from projects.models import *
+
 from .models import (
     Bio, 
     Job_Title, 
@@ -24,6 +26,7 @@ def index(request):
     experience = Experience.objects.all()
     coding_skill = Coding_Skill.objects.all()
     technology = Technology.objects.all()
+    project = Project.objects.filter(featured=True)
 
     context = {
         "bio": bio,
@@ -35,6 +38,7 @@ def index(request):
         "experience" : experience,
         "coding_skill": coding_skill,
         "technology" : technology,
+        "project" : project
 
 
 

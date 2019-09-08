@@ -1,83 +1,87 @@
 {% extends "base.html" %}
 {% load static%}
 {% block content %}
-      <!-- Main Content -->
-      <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div class="pt-wrapper">
-          <!-- Subpages -->
-          <div class="subpages">
-
-            <!-- Portfolio Subpage -->
-            <section class="pt-page" data-id="portfolio">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Projects</h2>
-                  <h5 class="section-description">Some Of My Work</h5>
-                </div>
-          
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <!-- Portfolio Content -->
-                      <div class="portfolio-content">
-
-                        <ul class="portfolio-filters">
-                          <li class="active">
-                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_python">Python</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_wordpress">PHP</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_java">Java</a>
-                          </li>
-                          
-                        
-                        </ul>
-
-                        <!-- Portfolio Grid -->
-                        <div class="portfolio-grid three-columns">
-                          {% for project in projects %}
-                            
-                          <figure class="item standard" data-groups='["category_all", {% for tech in project.technology.all %} "{{tech.name}}"{% endfor%}]'>                                       
-                            <div class="portfolio-item-img">
-                              <img src="{{ project.image.url }}" alt="project" title="" />
-                              <a href="{% url 'projects:projects_detail' project.slug  %}" class="ajax-page-load"></a> 
-                            </div>
-
-                            <i class="far fa-file-alt"></i>
-                            
-                            <h4 class="name">{{project.title}}</h4>
-                              {% for category in project.category.all %}
-                            <span class="category">{{category.title}}</span>
-                              {% endfor %}
-                          </figure>
-
-                          {% endfor %}
 
 
-                          {% comment %} # example for youtube video project 
-                          <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="{% static 'images/portfolio/6.jpg' %}" alt="YouTube Video 1" title="" />
-                              <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
-                            </div>
-
-                            <i class="fas fa-video"></i>
-                            <h4 class="name">YouTube Video 1</h4>
-                            <span class="category">YouTube Videos</span>
-                          </figure> {% endcomment %}
-                        </div>
-                      </div>
-                      <!-- /Portfolio Content -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- /Portfolio Subpage -->
 {% endblock content %}
+
+
+{#    <!-- Main Content -->#}
+{#      <div id="main" class="site-main">#}
+{#        <!-- Page changer wrapper -->#}
+{#        <div class="pt-wrapper">#}
+{#          <!-- Subpages -->#}
+{#          <div class="subpages">#}
+{##}
+{#            <!-- Portfolio Subpage -->#}
+{#            <section class="pt-page" data-id="projects">#}
+{#              <div class="section-inner custom-page-content">#}
+{#                <div class="section-title-block second-style">#}
+{#                  <h2 class="section-title">Projects</h2>#}
+{#                  <h5 class="section-description">Some Of My Work</h5>#}
+{#                </div>#}
+{#          #}
+{#                <div class="section-content">#}
+{#                  <div class="row">#}
+{#                    <div class="col-xs-12 col-sm-12">#}
+{#                      <!-- Portfolio Content -->#}
+{#                      <div class="portfolio-content">#}
+{##}
+{#                        <ul class="portfolio-filters">#}
+{#                          <li class="active">#}
+{#                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>#}
+{#                          </li>#}
+{#                          <li>#}
+{#                            <a class="filter btn btn-sm btn-link" data-group="category_python">Python</a>#}
+{#                          </li>#}
+{#                          <li>#}
+{#                            <a class="filter btn btn-sm btn-link" data-group="category_wordpress">PHP</a>#}
+{#                          </li>#}
+{#                          <li>#}
+{#                            <a class="filter btn btn-sm btn-link" data-group="category_java">Java</a>#}
+{#                          </li>#}
+{#                          #}
+{#                        #}
+{#                        </ul>#}
+{##}
+{#                        <!-- Portfolio Grid -->#}
+{#                        <div class="portfolio-grid three-columns">#}
+{#                          {% for project in projects %}#}
+{#                            #}
+{#                          <figure class="item standard" data-groups='["category_all", {% for tech in project.technology.all %} "{{tech.name}}"{% endfor%}]'>                                       #}
+{#                            <div class="portfolio-item-img">#}
+{#                              <img src="{{ project.image.url }}" alt="project" title="" />#}
+{#                              <a href="{{project.slug}}" ></a>#}
+{#                            </div>#}
+{##}
+{#                            <i class="far fa-file-alt"></i>#}
+{#                            #}
+{#                            <h4 class="name">{{project.title}}</h4>#}
+{#                              {% for category in project.category.all %}#}
+{#                            <span class="category">{{category.title}}</span>#}
+{#                              {% endfor %}#}
+{#                          </figure>#}
+{##}
+{#                          {% endfor %}#}
+{##}
+{##}
+{#                          {% comment %} # example for youtube video project #}
+{#                          <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>#}
+{#                            <div class="portfolio-item-img">#}
+{#                              <img src="{% static 'images/portfolio/6.jpg' %}" alt="YouTube Video 1" title="" />#}
+{#                              <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>#}
+{#                            </div>#}
+{##}
+{#                            <i class="fas fa-video"></i>#}
+{#                            <h4 class="name">YouTube Video 1</h4>#}
+{#                            <span class="category">YouTube Videos</span>#}
+{#                          </figure> {% endcomment %}#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <!-- /Portfolio Content -->#}
+{#                    </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </section>#}
+{#            <!-- /Portfolio Subpage -->#}
