@@ -60,7 +60,7 @@ class Experience(models.Model):
 
 
     def __str__(self):
-        return self.job
+        return self.job + ' ' + 'in' + ' ' + self.company
 
 
 class Coding_Skill(models.Model):

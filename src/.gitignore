@@ -37,7 +37,6 @@ venv.bak/
 awskey/
 
 #Django_settings_local
-local.py
 
 # Django stuff:
 *.log
