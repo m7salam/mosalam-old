@@ -1,11 +1,11 @@
 
 from django.shortcuts import render
-from projects.models import *
-from blog.models import *
+from projects.models import Project
+from blog.models import Post
 from .models import (
-    Bio, 
-    Job_Title, 
-    Services, 
+    Bio,
+    Job_Title,
+    Services,
     Testimonial,
     Client,
     Education,
@@ -13,7 +13,7 @@ from .models import (
     Coding_Skill,
     Technology,
 
-    )
+)
 
 
 def index(request):
@@ -34,20 +34,16 @@ def index(request):
         "bio": bio,
         "job_title": job_title,
         "service": service,
-        "testimonial" : testimonial,
-        "client" : client,
-        "education" : education,
-        "experience" : experience,
+        "testimonial": testimonial,
+        "client": client,
+        "education": education,
+        "experience": experience,
         "coding_skill": coding_skill,
-        "technology" : technology,
-        "project_featured" : project_featured,
+        "technology": technology,
+        "project_featured": project_featured,
         "project": project,
-        "featured_blog":featured_blog,
-
-
-
-
-
+        "featured_blog": featured_blog,
 
     }
+
     return render(request, 'index.html', context)
