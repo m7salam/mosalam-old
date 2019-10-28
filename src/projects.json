@@ -1,0 +1,187 @@
+[
+{
+  "model": "projects.technology",
+  "pk": 1,
+  "fields": {
+    "name": "Python"
+  }
+},
+{
+  "model": "projects.technology",
+  "pk": 2,
+  "fields": {
+    "name": "Java"
+  }
+},
+{
+  "model": "projects.technology",
+  "pk": 3,
+  "fields": {
+    "name": "Wordpress"
+  }
+},
+{
+  "model": "projects.technology",
+  "pk": 4,
+  "fields": {
+    "name": "Django"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 1,
+  "fields": {
+    "title": "Python"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 2,
+  "fields": {
+    "title": "Django"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 3,
+  "fields": {
+    "title": "Java"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 4,
+  "fields": {
+    "title": "Business"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 5,
+  "fields": {
+    "title": "Wordpress"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 6,
+  "fields": {
+    "title": "MongoDb"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 7,
+  "fields": {
+    "title": "Node.js"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 8,
+  "fields": {
+    "title": "Angular"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 9,
+  "fields": {
+    "title": "Bootstrap4"
+  }
+},
+{
+  "model": "projects.category",
+  "pk": 10,
+  "fields": {
+    "title": "PostgreSQL"
+  }
+},
+{
+  "model": "projects.images",
+  "pk": 1,
+  "fields": {
+    "image": "Projects/oneuniweb_8ZkFTmx.png"
+  }
+},
+{
+  "model": "projects.images",
+  "pk": 2,
+  "fields": {
+    "image": "Projects/AI__Applications_suggestions.png"
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 1,
+  "fields": {
+    "title": "Hla-Media",
+    "slug": "hla-media",
+    "description": "description of Hla-media",
+    "video": "",
+    "website": "http://hla-media.com/",
+    "ajax_id": "hla-media",
+    "featured": false,
+    "thumbnail": "Thumbnail/hla-media.png",
+    "image": [],
+    "technology": [
+      3
+    ],
+    "category": [
+      5
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 2,
+  "fields": {
+    "title": "Mo Salam (Personal Website)",
+    "slug": "mo-salam",
+    "description": "personal website description",
+    "video": "",
+    "website": "http://mosalam.me",
+    "ajax_id": "mosalam",
+    "featured": true,
+    "thumbnail": "Thumbnail/mosalamweb.png",
+    "image": [],
+    "technology": [
+      1,
+      4
+    ],
+    "category": [
+      1,
+      2,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 3,
+  "fields": {
+    "title": "1UNi",
+    "slug": "1uni",
+    "description": "java project 1UNi",
+    "video": "https://www.youtube.com/embed/2Nz6IUfJ0_s",
+    "website": "https://1uni.net",
+    "ajax_id": "1uni",
+    "featured": true,
+    "thumbnail": "Thumbnail/oneuniweb.png",
+    "image": [
+      1,
+      2
+    ],
+    "technology": [
+      2
+    ],
+    "category": [
+      3,
+      6,
+      7,
+      8
+    ]
+  }
+}
+]

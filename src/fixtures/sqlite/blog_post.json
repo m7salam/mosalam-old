@@ -1,0 +1,46 @@
+[
+    {
+        "body": "first post to check",
+        "created_on": "2019-07-21 09:34:29.844604",
+        "creator_id": "",
+        "featured": "0",
+        "id": "1",
+        "last_modified": "2019-07-21 09:34:29.844631",
+        "tagline": "",
+        "thumbnail": "",
+        "title": "test post 1"
+    },
+    {
+        "body": "testing purpose bitch",
+        "created_on": "2019-07-21 09:34:44.938268",
+        "creator_id": "1",
+        "featured": "1",
+        "id": "2",
+        "last_modified": "2019-09-08 18:29:36.667613",
+        "tagline": "",
+        "thumbnail": "oneuniweb.png",
+        "title": "second post to add 2"
+    },
+    {
+        "body": "sdasdsa ad sada vdasvda asd dsa dasd\r\nsadadadasdas fds\r\nfsd\r\nf\r\nsd\r\nf\r\nsdf\r\nsdf\r\nsd\r\nf\r\nfs\r\ndf\r\nsdf",
+        "created_on": "2019-07-21 09:34:57.983194",
+        "creator_id": "1",
+        "featured": "1",
+        "id": "3",
+        "last_modified": "2019-09-08 18:30:13.329146",
+        "tagline": "",
+        "thumbnail": "Screenshot_from_2019-07-17_13-15-00.png",
+        "title": "third post to add"
+    },
+    {
+        "body": "that is exactly whats going to happen.",
+        "created_on": "2019-07-21 11:40:29.942569",
+        "creator_id": "1",
+        "featured": "0",
+        "id": "4",
+        "last_modified": "2019-09-08 18:28:40.410992",
+        "tagline": "fuck me over the moon",
+        "thumbnail": "AI__Applications_suggestions.png",
+        "title": "AI test post"
+    }
+]

@@ -1,0 +1,117 @@
+[
+    {
+        "app_label": "admin",
+        "id": "1",
+        "model": "logentry"
+    },
+    {
+        "app_label": "auth",
+        "id": "2",
+        "model": "permission"
+    },
+    {
+        "app_label": "auth",
+        "id": "3",
+        "model": "group"
+    },
+    {
+        "app_label": "auth",
+        "id": "4",
+        "model": "user"
+    },
+    {
+        "app_label": "contenttypes",
+        "id": "5",
+        "model": "contenttype"
+    },
+    {
+        "app_label": "sessions",
+        "id": "6",
+        "model": "session"
+    },
+    {
+        "app_label": "blog",
+        "id": "7",
+        "model": "category"
+    },
+    {
+        "app_label": "blog",
+        "id": "8",
+        "model": "post"
+    },
+    {
+        "app_label": "blog",
+        "id": "9",
+        "model": "comment"
+    },
+    {
+        "app_label": "blog",
+        "id": "10",
+        "model": "author"
+    },
+    {
+        "app_label": "resume",
+        "id": "11",
+        "model": "bio"
+    },
+    {
+        "app_label": "resume",
+        "id": "12",
+        "model": "job_title"
+    },
+    {
+        "app_label": "resume",
+        "id": "13",
+        "model": "services"
+    },
+    {
+        "app_label": "resume",
+        "id": "14",
+        "model": "testimonial"
+    },
+    {
+        "app_label": "resume",
+        "id": "15",
+        "model": "client"
+    },
+    {
+        "app_label": "resume",
+        "id": "16",
+        "model": "coding_skill"
+    },
+    {
+        "app_label": "resume",
+        "id": "17",
+        "model": "education"
+    },
+    {
+        "app_label": "resume",
+        "id": "18",
+        "model": "experience"
+    },
+    {
+        "app_label": "resume",
+        "id": "19",
+        "model": "technology"
+    },
+    {
+        "app_label": "projects",
+        "id": "20",
+        "model": "project"
+    },
+    {
+        "app_label": "projects",
+        "id": "21",
+        "model": "technology"
+    },
+    {
+        "app_label": "projects",
+        "id": "22",
+        "model": "category"
+    },
+    {
+        "app_label": "projects",
+        "id": "23",
+        "model": "images"
+    }
+]

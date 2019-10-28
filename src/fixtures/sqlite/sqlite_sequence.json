@@ -1,0 +1,110 @@
+[
+    {
+        "name": "django_migrations",
+        "seq": "40"
+    },
+    {
+        "name": "django_admin_log",
+        "seq": "145"
+    },
+    {
+        "name": "django_content_type",
+        "seq": "23"
+    },
+    {
+        "name": "auth_permission",
+        "seq": "92"
+    },
+    {
+        "name": "auth_user",
+        "seq": "2"
+    },
+    {
+        "name": "auth_group",
+        "seq": "0"
+    },
+    {
+        "name": "blog_category",
+        "seq": "4"
+    },
+    {
+        "name": "blog_post_categories",
+        "seq": "4"
+    },
+    {
+        "name": "blog_comment",
+        "seq": "1"
+    },
+    {
+        "name": "blog_author",
+        "seq": "2"
+    },
+    {
+        "name": "resume_bio",
+        "seq": "1"
+    },
+    {
+        "name": "resume_job_title",
+        "seq": "2"
+    },
+    {
+        "name": "resume_services",
+        "seq": "6"
+    },
+    {
+        "name": "resume_testimonial",
+        "seq": "2"
+    },
+    {
+        "name": "resume_client",
+        "seq": "3"
+    },
+    {
+        "name": "resume_education",
+        "seq": "2"
+    },
+    {
+        "name": "resume_experience",
+        "seq": "2"
+    },
+    {
+        "name": "resume_coding_skill",
+        "seq": "4"
+    },
+    {
+        "name": "resume_technology",
+        "seq": "3"
+    },
+    {
+        "name": "projects_technology",
+        "seq": "5"
+    },
+    {
+        "name": "projects_project_technology",
+        "seq": "8"
+    },
+    {
+        "name": "projects_category",
+        "seq": "10"
+    },
+    {
+        "name": "projects_project_category",
+        "seq": "13"
+    },
+    {
+        "name": "projects_images",
+        "seq": "2"
+    },
+    {
+        "name": "projects_project",
+        "seq": "5"
+    },
+    {
+        "name": "blog_post",
+        "seq": "4"
+    },
+    {
+        "name": "projects_project_image",
+        "seq": "3"
+    }
+]

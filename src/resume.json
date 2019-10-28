@@ -1,0 +1,201 @@
+[
+{
+  "model": "resume.bio",
+  "pk": 1,
+  "fields": {
+    "name": "Mo Salam",
+    "bio_body": "A serial Entrepreneur with engineering as well as business background who managed and consulted more than 15 Start-up\u2019s in the tech industry for the last 10 years.He is driven by a strong passion for technology-empowered by entrepreneurial skills and therefore worked with various technologies such as (HTML, CSS, JavaScript, Python, Java , Angular JS, PHP,JSON,XML,Git, AWS, WordPress, Heroku, DigitalOcean, Linux, CLI, Django, OpenCV,\u2026)</br>\r\n\r\nFor more on the projects he has worked on check out the <a href=\"#mh-portfolio\"> Projects</a> page</br></ln>\r\n\r\nIn business he has raised sales above 6.6+ Million RM (1.6+ M USD) in less than a year through inbound marketing techniques, gained as a chief operations officer at YouSocial a profit margin of 60% and raised 166 K USD in seed funding for 2 of his Start-up\u2019s in the past 2 years.</br>\r\n\r\nCombining both business and engineering aspects sets him to become the Full Stack Entrepreneur he aspires. </br>\r\n\r\nBecause it is really important to know the WHAT and the WHY to master the HOW. It\u2019s all about Coding with a goal in mind. </br>"
+  }
+},
+{
+  "model": "resume.job_title",
+  "pk": 1,
+  "fields": {
+    "job_title": "Software Engineer"
+  }
+},
+{
+  "model": "resume.job_title",
+  "pk": 2,
+  "fields": {
+    "job_title": "Full Stack Developer"
+  }
+},
+{
+  "model": "resume.services",
+  "pk": 1,
+  "fields": {
+    "title": "AI / Machine Learning",
+    "description": "TensorFlow, Pytorch",
+    "icon": "<i class=\"fa fa-object-ungroup sky-color\"></i>"
+  }
+},
+{
+  "model": "resume.services",
+  "pk": 2,
+  "fields": {
+    "title": "Web Development",
+    "description": "Backend: Python, Django, Django RestFramework, Java, Spring boot </br>\r\nfrontend : HTML, CSS, JavaScript, React.js",
+    "icon": "<i class=\"fa fa-code iron-color\"></i>"
+  }
+},
+{
+  "model": "resume.services",
+  "pk": 6,
+  "fields": {
+    "title": "Growth",
+    "description": "Digital Marketing, Business Modeling Strategy, and more",
+    "icon": "<i class=\"fa fa-bullseye purple-color\"></i>"
+  }
+},
+{
+  "model": "resume.testimonial",
+  "pk": 1,
+  "fields": {
+    "person": "Pia",
+    "company": "Piamo",
+    "body": "Mo is the best in bed",
+    "picture": "Testimonial/pro_pic_sq.jpg"
+  }
+},
+{
+  "model": "resume.testimonial",
+  "pk": 2,
+  "fields": {
+    "person": "Pia Kircher",
+    "company": "Piamo 2",
+    "body": "Mo has the biggest dick",
+    "picture": "Testimonial/face7.png"
+  }
+},
+{
+  "model": "resume.client",
+  "pk": 1,
+  "fields": {
+    "name": "Hla-Media",
+    "logo": "client/Hla_Media_logo.png",
+    "link": "http://hla-media.com/"
+  }
+},
+{
+  "model": "resume.client",
+  "pk": 2,
+  "fields": {
+    "name": "Spectrum",
+    "logo": "client/spectrum.png",
+    "link": "https://spectrumiis.edu.my/"
+  }
+},
+{
+  "model": "resume.client",
+  "pk": 3,
+  "fields": {
+    "name": "Ticket4Cheap",
+    "logo": "client/logo.png",
+    "link": "#"
+  }
+},
+{
+  "model": "resume.education",
+  "pk": 1,
+  "fields": {
+    "university": "IBSS(International Business School of Scandinavia)",
+    "year": "2015-2018",
+    "subject": "Bachelor of Business Administration - BBA",
+    "overview": "Business administration is administration of a business. It includes all aspects of overseeing and supervising business operations, as well as related fields which include accounting, finance, project management and marketing."
+  }
+},
+{
+  "model": "resume.education",
+  "pk": 2,
+  "fields": {
+    "university": "NewCairo Academy",
+    "year": "2008-2014",
+    "subject": "Electrical, Electronics and Communications Engineering",
+    "overview": "I have studied 4 years in Engineering, have got a lot of knowledge, and open up my mind to the potential of technology and what actually I want to be. so I am glad I had this experience."
+  }
+},
+{
+  "model": "resume.experience",
+  "pk": 1,
+  "fields": {
+    "job": "MSPR",
+    "company": "Microsoft",
+    "period": "Oct 2011 - 2013",
+    "overview": "Chosen as Microsoft Student Partner Representative and nominated to be MSP following year.\r\nattended many training workshops such as :\r\n\r\n- Innovation Warm-Up Event \u2013 Microsoft Egypt\r\n- Adventure | Citizenship Warm-up \u2013 Microsoft Egypt"
+  }
+},
+{
+  "model": "resume.experience",
+  "pk": 2,
+  "fields": {
+    "job": "Head Of Development & Technology",
+    "company": "Accsellerate SDN BHD",
+    "period": "Septmeber 2019 - Present",
+    "overview": "Leading the Technology and Development Team in Accsellerate SDN BHD, part of Commerce.Asia group, to build a leading end to end SaaS solution for Business to manage all their business operations from accounting, sales, hr, and operations and introducing them to new opportunities inside a rich ecosystem enabled by our partners in commerce.asia."
+  }
+},
+{
+  "model": "resume.coding_skill",
+  "pk": 1,
+  "fields": {
+    "skill": "Python",
+    "level": "95%",
+    "style_class": "skill-percentage skill-1"
+  }
+},
+{
+  "model": "resume.coding_skill",
+  "pk": 2,
+  "fields": {
+    "skill": "Java",
+    "level": "70%",
+    "style_class": "skill-percentage skill-2"
+  }
+},
+{
+  "model": "resume.coding_skill",
+  "pk": 3,
+  "fields": {
+    "skill": "Django",
+    "level": "95%",
+    "style_class": "skill-percentage skill-3"
+  }
+},
+{
+  "model": "resume.coding_skill",
+  "pk": 4,
+  "fields": {
+    "skill": "React",
+    "level": "70%",
+    "style_class": "skill-percentage skill-1"
+  }
+},
+{
+  "model": "resume.technology",
+  "pk": 1,
+  "fields": {
+    "technology": "Git",
+    "level": "95",
+    "style_class": "skill-percentage skill-5"
+  }
+},
+{
+  "model": "resume.technology",
+  "pk": 2,
+  "fields": {
+    "technology": "AWS",
+    "level": "80",
+    "style_class": "skill-percentage skill-6"
+  }
+},
+{
+  "model": "resume.technology",
+  "pk": 3,
+  "fields": {
+    "technology": "Docker",
+    "level": "60",
+    "style_class": "skill-percentage skill-7"
+  }
+}
+]

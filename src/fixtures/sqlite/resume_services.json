@@ -1,0 +1,20 @@
+[
+    {
+        "description": "TensorFlow, Pytorch",
+        "icon": "<i class=\"fa fa-object-ungroup sky-color\"></i>",
+        "id": "1",
+        "title": "AI / Machine Learning"
+    },
+    {
+        "description": "Backend: Python, Django, Django RestFramework, Java, Spring boot </br>\r\nfrontend : HTML, CSS, JavaScript, React.js",
+        "icon": "<i class=\"fa fa-code iron-color\"></i>",
+        "id": "2",
+        "title": "Web Development"
+    },
+    {
+        "description": "Digital Marketing, Business Modeling Strategy, and more",
+        "icon": "<i class=\"fa fa-bullseye purple-color\"></i>",
+        "id": "6",
+        "title": "Growth"
+    }
+]

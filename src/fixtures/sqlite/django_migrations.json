@@ -1,0 +1,242 @@
+[
+    {
+        "app": "contenttypes",
+        "applied": "2019-07-21 09:07:48.814070",
+        "id": "1",
+        "name": "0001_initial"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:48.841421",
+        "id": "2",
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2019-07-21 09:07:48.883606",
+        "id": "3",
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2019-07-21 09:07:48.909374",
+        "id": "4",
+        "name": "0002_logentry_remove_auto_add"
+    },
+    {
+        "app": "admin",
+        "applied": "2019-07-21 09:07:48.945673",
+        "id": "5",
+        "name": "0003_logentry_add_action_flag_choices"
+    },
+    {
+        "app": "contenttypes",
+        "applied": "2019-07-21 09:07:48.984105",
+        "id": "6",
+        "name": "0002_remove_content_type_name"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.011717",
+        "id": "7",
+        "name": "0002_alter_permission_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.039988",
+        "id": "8",
+        "name": "0003_alter_user_email_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.062416",
+        "id": "9",
+        "name": "0004_alter_user_username_opts"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.080410",
+        "id": "10",
+        "name": "0005_alter_user_last_login_null"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.092883",
+        "id": "11",
+        "name": "0006_require_contenttypes_0002"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.118524",
+        "id": "12",
+        "name": "0007_alter_validators_add_error_messages"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.141896",
+        "id": "13",
+        "name": "0008_alter_user_username_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.160435",
+        "id": "14",
+        "name": "0009_alter_user_last_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.192201",
+        "id": "15",
+        "name": "0010_alter_group_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2019-07-21 09:07:49.212743",
+        "id": "16",
+        "name": "0011_update_proxy_permissions"
+    },
+    {
+        "app": "sessions",
+        "applied": "2019-07-21 09:07:49.230087",
+        "id": "17",
+        "name": "0001_initial"
+    },
+    {
+        "app": "blog",
+        "applied": "2019-07-21 09:31:50.168934",
+        "id": "18",
+        "name": "0001_initial"
+    },
+    {
+        "app": "blog",
+        "applied": "2019-07-21 11:25:56.411327",
+        "id": "19",
+        "name": "0002_auto_20190721_1125"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 04:48:11.379196",
+        "id": "20",
+        "name": "0001_initial"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 04:57:10.052082",
+        "id": "21",
+        "name": "0002_auto_20190724_1256"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 06:05:05.082210",
+        "id": "22",
+        "name": "0003_services"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 06:07:53.977755",
+        "id": "23",
+        "name": "0004_auto_20190724_1407"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 06:18:50.106781",
+        "id": "24",
+        "name": "0005_auto_20190724_1418"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 12:44:29.424558",
+        "id": "25",
+        "name": "0006_testimonial"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-24 12:51:54.415109",
+        "id": "26",
+        "name": "0007_auto_20190724_2051"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-25 00:33:17.854857",
+        "id": "27",
+        "name": "0008_client"
+    },
+    {
+        "app": "resume",
+        "applied": "2019-07-25 01:10:25.604781",
+        "id": "28",
+        "name": "0009_coding_skill_education_experience_technology"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-08-11 16:25:45.685721",
+        "id": "29",
+        "name": "0001_initial"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-08-11 16:30:41.861481",
+        "id": "30",
+        "name": "0002_auto_20190812_0030"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-08-11 17:06:17.593483",
+        "id": "31",
+        "name": "0003_auto_20190812_0106"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-08-12 04:27:33.673052",
+        "id": "32",
+        "name": "0004_auto_20190812_1227"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-08-12 05:11:56.450716",
+        "id": "33",
+        "name": "0005_images"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-08-15 12:49:06.782022",
+        "id": "34",
+        "name": "0006_project_ajax_id"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-09-08 07:12:59.421751",
+        "id": "35",
+        "name": "0007_project_featured"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-09-08 12:13:13.110151",
+        "id": "36",
+        "name": "0008_auto_20190908_2012"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-09-08 12:26:56.204341",
+        "id": "37",
+        "name": "0009_auto_20190908_2026"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-09-08 12:33:16.105478",
+        "id": "38",
+        "name": "0010_project_thumbnail"
+    },
+    {
+        "app": "blog",
+        "applied": "2019-09-08 18:11:58.968472",
+        "id": "39",
+        "name": "0003_post_featured"
+    },
+    {
+        "app": "projects",
+        "applied": "2019-09-08 18:11:58.980874",
+        "id": "40",
+        "name": "0011_auto_20190909_0211"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "title": "Python"
+    },
+    {
+        "id": "2",
+        "title": "Django"
+    },
+    {
+        "id": "3",
+        "title": "Java"
+    },
+    {
+        "id": "4",
+        "title": "Business"
+    },
+    {
+        "id": "5",
+        "title": "Wordpress"
+    },
+    {
+        "id": "6",
+        "title": "MongoDb"
+    },
+    {
+        "id": "7",
+        "title": "Node.js"
+    },
+    {
+        "id": "8",
+        "title": "Angular"
+    },
+    {
+        "id": "9",
+        "title": "Bootstrap4"
+    },
+    {
+        "id": "10",
+        "title": "PostgreSQL"
+    }
+]

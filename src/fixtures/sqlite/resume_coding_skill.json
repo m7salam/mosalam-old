@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "level": "95%",
+        "skill": "Python",
+        "style_class": "skill-percentage skill-1"
+    },
+    {
+        "id": "2",
+        "level": "70%",
+        "skill": "Java",
+        "style_class": "skill-percentage skill-2"
+    },
+    {
+        "id": "3",
+        "level": "95%",
+        "skill": "Django",
+        "style_class": "skill-percentage skill-3"
+    },
+    {
+        "id": "4",
+        "level": "70%",
+        "skill": "React",
+        "style_class": "skill-percentage skill-1"
+    }
+]

@@ -1,0 +1,554 @@
+[
+    {
+        "codename": "add_logentry",
+        "content_type_id": "1",
+        "id": "1",
+        "name": "Can add log entry"
+    },
+    {
+        "codename": "change_logentry",
+        "content_type_id": "1",
+        "id": "2",
+        "name": "Can change log entry"
+    },
+    {
+        "codename": "delete_logentry",
+        "content_type_id": "1",
+        "id": "3",
+        "name": "Can delete log entry"
+    },
+    {
+        "codename": "view_logentry",
+        "content_type_id": "1",
+        "id": "4",
+        "name": "Can view log entry"
+    },
+    {
+        "codename": "add_permission",
+        "content_type_id": "2",
+        "id": "5",
+        "name": "Can add permission"
+    },
+    {
+        "codename": "change_permission",
+        "content_type_id": "2",
+        "id": "6",
+        "name": "Can change permission"
+    },
+    {
+        "codename": "delete_permission",
+        "content_type_id": "2",
+        "id": "7",
+        "name": "Can delete permission"
+    },
+    {
+        "codename": "view_permission",
+        "content_type_id": "2",
+        "id": "8",
+        "name": "Can view permission"
+    },
+    {
+        "codename": "add_group",
+        "content_type_id": "3",
+        "id": "9",
+        "name": "Can add group"
+    },
+    {
+        "codename": "change_group",
+        "content_type_id": "3",
+        "id": "10",
+        "name": "Can change group"
+    },
+    {
+        "codename": "delete_group",
+        "content_type_id": "3",
+        "id": "11",
+        "name": "Can delete group"
+    },
+    {
+        "codename": "view_group",
+        "content_type_id": "3",
+        "id": "12",
+        "name": "Can view group"
+    },
+    {
+        "codename": "add_user",
+        "content_type_id": "4",
+        "id": "13",
+        "name": "Can add user"
+    },
+    {
+        "codename": "change_user",
+        "content_type_id": "4",
+        "id": "14",
+        "name": "Can change user"
+    },
+    {
+        "codename": "delete_user",
+        "content_type_id": "4",
+        "id": "15",
+        "name": "Can delete user"
+    },
+    {
+        "codename": "view_user",
+        "content_type_id": "4",
+        "id": "16",
+        "name": "Can view user"
+    },
+    {
+        "codename": "add_contenttype",
+        "content_type_id": "5",
+        "id": "17",
+        "name": "Can add content type"
+    },
+    {
+        "codename": "change_contenttype",
+        "content_type_id": "5",
+        "id": "18",
+        "name": "Can change content type"
+    },
+    {
+        "codename": "delete_contenttype",
+        "content_type_id": "5",
+        "id": "19",
+        "name": "Can delete content type"
+    },
+    {
+        "codename": "view_contenttype",
+        "content_type_id": "5",
+        "id": "20",
+        "name": "Can view content type"
+    },
+    {
+        "codename": "add_session",
+        "content_type_id": "6",
+        "id": "21",
+        "name": "Can add session"
+    },
+    {
+        "codename": "change_session",
+        "content_type_id": "6",
+        "id": "22",
+        "name": "Can change session"
+    },
+    {
+        "codename": "delete_session",
+        "content_type_id": "6",
+        "id": "23",
+        "name": "Can delete session"
+    },
+    {
+        "codename": "view_session",
+        "content_type_id": "6",
+        "id": "24",
+        "name": "Can view session"
+    },
+    {
+        "codename": "add_category",
+        "content_type_id": "7",
+        "id": "25",
+        "name": "Can add category"
+    },
+    {
+        "codename": "change_category",
+        "content_type_id": "7",
+        "id": "26",
+        "name": "Can change category"
+    },
+    {
+        "codename": "delete_category",
+        "content_type_id": "7",
+        "id": "27",
+        "name": "Can delete category"
+    },
+    {
+        "codename": "view_category",
+        "content_type_id": "7",
+        "id": "28",
+        "name": "Can view category"
+    },
+    {
+        "codename": "add_post",
+        "content_type_id": "8",
+        "id": "29",
+        "name": "Can add post"
+    },
+    {
+        "codename": "change_post",
+        "content_type_id": "8",
+        "id": "30",
+        "name": "Can change post"
+    },
+    {
+        "codename": "delete_post",
+        "content_type_id": "8",
+        "id": "31",
+        "name": "Can delete post"
+    },
+    {
+        "codename": "view_post",
+        "content_type_id": "8",
+        "id": "32",
+        "name": "Can view post"
+    },
+    {
+        "codename": "add_comment",
+        "content_type_id": "9",
+        "id": "33",
+        "name": "Can add comment"
+    },
+    {
+        "codename": "change_comment",
+        "content_type_id": "9",
+        "id": "34",
+        "name": "Can change comment"
+    },
+    {
+        "codename": "delete_comment",
+        "content_type_id": "9",
+        "id": "35",
+        "name": "Can delete comment"
+    },
+    {
+        "codename": "view_comment",
+        "content_type_id": "9",
+        "id": "36",
+        "name": "Can view comment"
+    },
+    {
+        "codename": "add_author",
+        "content_type_id": "10",
+        "id": "37",
+        "name": "Can add author"
+    },
+    {
+        "codename": "change_author",
+        "content_type_id": "10",
+        "id": "38",
+        "name": "Can change author"
+    },
+    {
+        "codename": "delete_author",
+        "content_type_id": "10",
+        "id": "39",
+        "name": "Can delete author"
+    },
+    {
+        "codename": "view_author",
+        "content_type_id": "10",
+        "id": "40",
+        "name": "Can view author"
+    },
+    {
+        "codename": "add_bio",
+        "content_type_id": "11",
+        "id": "41",
+        "name": "Can add bio"
+    },
+    {
+        "codename": "change_bio",
+        "content_type_id": "11",
+        "id": "42",
+        "name": "Can change bio"
+    },
+    {
+        "codename": "delete_bio",
+        "content_type_id": "11",
+        "id": "43",
+        "name": "Can delete bio"
+    },
+    {
+        "codename": "view_bio",
+        "content_type_id": "11",
+        "id": "44",
+        "name": "Can view bio"
+    },
+    {
+        "codename": "add_job_title",
+        "content_type_id": "12",
+        "id": "45",
+        "name": "Can add job_ title"
+    },
+    {
+        "codename": "change_job_title",
+        "content_type_id": "12",
+        "id": "46",
+        "name": "Can change job_ title"
+    },
+    {
+        "codename": "delete_job_title",
+        "content_type_id": "12",
+        "id": "47",
+        "name": "Can delete job_ title"
+    },
+    {
+        "codename": "view_job_title",
+        "content_type_id": "12",
+        "id": "48",
+        "name": "Can view job_ title"
+    },
+    {
+        "codename": "add_services",
+        "content_type_id": "13",
+        "id": "49",
+        "name": "Can add services"
+    },
+    {
+        "codename": "change_services",
+        "content_type_id": "13",
+        "id": "50",
+        "name": "Can change services"
+    },
+    {
+        "codename": "delete_services",
+        "content_type_id": "13",
+        "id": "51",
+        "name": "Can delete services"
+    },
+    {
+        "codename": "view_services",
+        "content_type_id": "13",
+        "id": "52",
+        "name": "Can view services"
+    },
+    {
+        "codename": "add_testimonial",
+        "content_type_id": "14",
+        "id": "53",
+        "name": "Can add testimonial"
+    },
+    {
+        "codename": "change_testimonial",
+        "content_type_id": "14",
+        "id": "54",
+        "name": "Can change testimonial"
+    },
+    {
+        "codename": "delete_testimonial",
+        "content_type_id": "14",
+        "id": "55",
+        "name": "Can delete testimonial"
+    },
+    {
+        "codename": "view_testimonial",
+        "content_type_id": "14",
+        "id": "56",
+        "name": "Can view testimonial"
+    },
+    {
+        "codename": "add_client",
+        "content_type_id": "15",
+        "id": "57",
+        "name": "Can add client"
+    },
+    {
+        "codename": "change_client",
+        "content_type_id": "15",
+        "id": "58",
+        "name": "Can change client"
+    },
+    {
+        "codename": "delete_client",
+        "content_type_id": "15",
+        "id": "59",
+        "name": "Can delete client"
+    },
+    {
+        "codename": "view_client",
+        "content_type_id": "15",
+        "id": "60",
+        "name": "Can view client"
+    },
+    {
+        "codename": "add_coding_skill",
+        "content_type_id": "16",
+        "id": "61",
+        "name": "Can add coding_ skill"
+    },
+    {
+        "codename": "change_coding_skill",
+        "content_type_id": "16",
+        "id": "62",
+        "name": "Can change coding_ skill"
+    },
+    {
+        "codename": "delete_coding_skill",
+        "content_type_id": "16",
+        "id": "63",
+        "name": "Can delete coding_ skill"
+    },
+    {
+        "codename": "view_coding_skill",
+        "content_type_id": "16",
+        "id": "64",
+        "name": "Can view coding_ skill"
+    },
+    {
+        "codename": "add_education",
+        "content_type_id": "17",
+        "id": "65",
+        "name": "Can add education"
+    },
+    {
+        "codename": "change_education",
+        "content_type_id": "17",
+        "id": "66",
+        "name": "Can change education"
+    },
+    {
+        "codename": "delete_education",
+        "content_type_id": "17",
+        "id": "67",
+        "name": "Can delete education"
+    },
+    {
+        "codename": "view_education",
+        "content_type_id": "17",
+        "id": "68",
+        "name": "Can view education"
+    },
+    {
+        "codename": "add_experience",
+        "content_type_id": "18",
+        "id": "69",
+        "name": "Can add experience"
+    },
+    {
+        "codename": "change_experience",
+        "content_type_id": "18",
+        "id": "70",
+        "name": "Can change experience"
+    },
+    {
+        "codename": "delete_experience",
+        "content_type_id": "18",
+        "id": "71",
+        "name": "Can delete experience"
+    },
+    {
+        "codename": "view_experience",
+        "content_type_id": "18",
+        "id": "72",
+        "name": "Can view experience"
+    },
+    {
+        "codename": "add_technology",
+        "content_type_id": "19",
+        "id": "73",
+        "name": "Can add technology"
+    },
+    {
+        "codename": "change_technology",
+        "content_type_id": "19",
+        "id": "74",
+        "name": "Can change technology"
+    },
+    {
+        "codename": "delete_technology",
+        "content_type_id": "19",
+        "id": "75",
+        "name": "Can delete technology"
+    },
+    {
+        "codename": "view_technology",
+        "content_type_id": "19",
+        "id": "76",
+        "name": "Can view technology"
+    },
+    {
+        "codename": "add_project",
+        "content_type_id": "20",
+        "id": "77",
+        "name": "Can add project"
+    },
+    {
+        "codename": "change_project",
+        "content_type_id": "20",
+        "id": "78",
+        "name": "Can change project"
+    },
+    {
+        "codename": "delete_project",
+        "content_type_id": "20",
+        "id": "79",
+        "name": "Can delete project"
+    },
+    {
+        "codename": "view_project",
+        "content_type_id": "20",
+        "id": "80",
+        "name": "Can view project"
+    },
+    {
+        "codename": "add_technology",
+        "content_type_id": "21",
+        "id": "81",
+        "name": "Can add technology"
+    },
+    {
+        "codename": "change_technology",
+        "content_type_id": "21",
+        "id": "82",
+        "name": "Can change technology"
+    },
+    {
+        "codename": "delete_technology",
+        "content_type_id": "21",
+        "id": "83",
+        "name": "Can delete technology"
+    },
+    {
+        "codename": "view_technology",
+        "content_type_id": "21",
+        "id": "84",
+        "name": "Can view technology"
+    },
+    {
+        "codename": "add_category",
+        "content_type_id": "22",
+        "id": "85",
+        "name": "Can add category"
+    },
+    {
+        "codename": "change_category",
+        "content_type_id": "22",
+        "id": "86",
+        "name": "Can change category"
+    },
+    {
+        "codename": "delete_category",
+        "content_type_id": "22",
+        "id": "87",
+        "name": "Can delete category"
+    },
+    {
+        "codename": "view_category",
+        "content_type_id": "22",
+        "id": "88",
+        "name": "Can view category"
+    },
+    {
+        "codename": "add_images",
+        "content_type_id": "23",
+        "id": "89",
+        "name": "Can add images"
+    },
+    {
+        "codename": "change_images",
+        "content_type_id": "23",
+        "id": "90",
+        "name": "Can change images"
+    },
+    {
+        "codename": "delete_images",
+        "content_type_id": "23",
+        "id": "91",
+        "name": "Can delete images"
+    },
+    {
+        "codename": "view_images",
+        "content_type_id": "23",
+        "id": "92",
+        "name": "Can view images"
+    }
+]

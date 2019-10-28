@@ -1,0 +1,28 @@
+[
+    {
+        "date_joined": "2019-07-21 09:32:24.691016",
+        "email": "mabdelsalam911@gmail.com",
+        "first_name": "",
+        "id": "1",
+        "is_active": "1",
+        "is_staff": "1",
+        "is_superuser": "1",
+        "last_login": "2019-10-27 08:36:08.812933",
+        "last_name": "",
+        "password": "pbkdf2_sha256$150000$Nt8z6JDnjIYV$gQYFshBFj5fz/sAkJaoOl/6QTAcOYMIu0H9Mi4jKrSI=",
+        "username": "mo"
+    },
+    {
+        "date_joined": "2019-07-21 11:32:17.804947",
+        "email": "",
+        "first_name": "",
+        "id": "2",
+        "is_active": "1",
+        "is_staff": "0",
+        "is_superuser": "0",
+        "last_login": "",
+        "last_name": "",
+        "password": "pbkdf2_sha256$150000$l44DZHJ9tlQy$s8l2mS5tVn1a5Lv9AGKx4HmxIfJzrufeqtt2oZ/QD40=",
+        "username": "motest"
+    }
+]

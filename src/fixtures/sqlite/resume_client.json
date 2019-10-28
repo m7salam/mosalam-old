@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "link": "http://hla-media.com/",
+        "logo": "client/Hla_Media_logo.png",
+        "name": "Hla-Media"
+    },
+    {
+        "id": "2",
+        "link": "https://spectrumiis.edu.my/",
+        "logo": "client/spectrum.png",
+        "name": "Spectrum"
+    },
+    {
+        "id": "3",
+        "link": "#",
+        "logo": "client/logo.png",
+        "name": "Ticket4Cheap"
+    }
+]
