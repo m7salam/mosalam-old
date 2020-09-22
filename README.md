@@ -3,6 +3,11 @@
 
 * [MoSalam](http://mosalam.me) - is my own personal website I have built for learning purposes, also to become the go to website to learn more about me and my experience.
 
+# screenshoots
+
+![screenshoot-mosalam2](https://user-images.githubusercontent.com/12870986/93849345-81de7300-fcde-11ea-9953-ff7a97779672.png)
+![screenshoot-mosalam3](https://user-images.githubusercontent.com/12870986/93849354-87d45400-fcde-11ea-91c1-2a72edf4a8d5.png)
+![screenshoot-mosalam1](https://user-images.githubusercontent.com/12870986/93849359-8c990800-fcde-11ea-9e35-1b24ec34c2b2.png)
 
 ## Getting Started
 
